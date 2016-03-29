@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_selector"
+        android:orientation="horizontal"
+        android:padding="5dip">
+
+
+        <TextView
+            android:id="@+id/list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_round_blue"
+            android:gravity="center"
+            android:text="@string/fa_user"
+            android:textColor="@drawable/btn_pressed_text"
+            android:textSize="@dimen/very_big_size" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_selector"
+            android:orientation="vertical"
+            android:padding="5dip">
+
+            <TextView
+                android:id="@+id/idTvSellerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rihanna Love the way lie"
+                android:textColor="#040404"
+                android:textSize="15dip"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <!-- Seller Name -->
+            <TextView
+                android:id="@+id/idTvTotalAmount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Just gona stand there and ..."
+                android:textColor="@color/white"
+                android:background="@drawable/btn_bg_light_green"
+                android:textSize="10dip" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/list_selector"
+        android:orientation="horizontal"
+       android:layout_centerVertical="true"
+        android:padding="5dip">
+    <TextView
+        android:id="@+id/idTvEditSeller"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:text="@string/fa_pencil"
+        android:textColor="@drawable/btn_pressed_text"
+        android:textSize="@dimen/default_size" />
+    <TextView
+
+        android:id="@+id/idTvDeleteSeller"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_bg_red"
+        android:gravity="center"
+        android:text="@string/fa_trash"
+        android:textColor="@drawable/btn_pressed_text"
+        android:textSize="@dimen/default_size" />
+    </LinearLayout>
+</RelativeLayout>

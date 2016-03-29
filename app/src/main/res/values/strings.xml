@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">AccountBook</string>
+
+    <string name="title_section1">Add Seller</string>
+    <string name="title_section2">Manage Sellers</string>
+    <string name="title_section3">Add Transactions</string>
+    <string name="title_section4">Exit</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="lbl_seller_name">Seller Name:</string>
+    <string name="lbl_add_seller">Add Seller Details</string>
+    <string name="lbl_add_transaction">Add Transaction Details</string>
+    <string name="lbl_mobile_number">Mobile No:</string>
+    <string name="lbl_seller_address">Seller Address:</string>
+    <string name="lbl_save">Save</string>
+    <string name="lbl_transaction_total">Transaction total</string>
+    <string name="lbl_transaction_number">Transaction number</string>
+    <string name="lbl_transaction_description">Transaction description</string>
+    <string name="lbl_transaction_type">Transaction type</string>
+
+</resources>

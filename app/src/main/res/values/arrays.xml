@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="left_menu_items">
+        <item>Add Seller</item>
+        <item>Add Transaction</item>
+        <item>Exit</item>
+    </array>
+
+    <array name="array_transaction_type">
+        <item>Select transaction type</item>
+        <item>Debit</item>
+        <item>Credit</item>
+        <item>Cash</item>
+    </array>
+    <array name="array_transaction_account">
+        <item>Select seller account type</item>
+        <item>Pakku</item>
+        <item>Kachu</item>
+    </array>
+</resources>

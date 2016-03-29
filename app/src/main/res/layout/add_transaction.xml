@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/idTvTitle"
+            style="@style/heading_style"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="@string/lbl_add_transaction"
+            android:textColor="@color/blue" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/d20dp"
+            android:padding="@dimen/d5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+            <Spinner
+                android:id="@+id/idSpnrSeller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/d10dp"
+                android:padding="@dimen/d10dp"
+                android:background="@drawable/spinner_background"
+
+                />
+            <Spinner
+                android:id="@+id/idSpnrAccountType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/d10dp"
+                android:padding="@dimen/d10dp"
+                android:background="@drawable/spinner_background"
+                android:entries="@array/array_transaction_account"
+                />
+
+             <EditText
+                    android:id="@+id/idEtTransactionNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d10dp"
+                    android:background="@drawable/textbox_bg"
+                    android:hint="@string/lbl_transaction_number"
+                    android:maxLength="64"
+                    android:singleLine="true" />
+            <EditText
+                    android:id="@+id/idEtTransactionDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d10dp"
+                    android:inputType="text"
+                    android:maxLength="128"
+                    android:background="@drawable/textbox_bg"
+                    android:hint="@string/lbl_transaction_description"
+                    android:singleLine="true" />
+            <Spinner
+                android:id="@+id/idSpnrTranSType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/d10dp"
+                android:background="@drawable/spinner_background"
+                android:entries="@array/array_transaction_type"
+               />
+
+             <EditText
+                    android:id="@+id/idEtTransactionAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:maxLength="5"
+                    android:background="@drawable/textbox_bg"
+                    android:hint="@string/lbl_transaction_total"
+                     />
+
+            <Button
+                android:id="@+id/idBtnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_bg_light_green"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="@string/lbl_save"
+                android:textAllCaps="false"
+                android:textColor="@drawable/btn_pressed_text"
+                android:textSize="@dimen/default_size" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

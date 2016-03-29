@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/idTvTitle"
+            style="@style/heading_style"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="@string/lbl_add_seller"
+            android:textColor="@color/blue" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/d20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/idEtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:background="@drawable/textbox_bg"
+                    android:hint="@string/lbl_seller_name"
+                    android:maxLength="64"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/idEtMobile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:background="@drawable/textbox_bg"
+                    android:hint="@string/lbl_mobile_number"
+                    android:inputType="phone"
+                    android:maxLength="12"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/idEtAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9"
+                    android:background="@drawable/textbox_bg"
+                    android:hint="@string/lbl_seller_address"
+                    android:inputType="text"
+                    android:maxLength="128"
+                    android:singleLine="true" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/idBtnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_bg_light_green"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="@string/lbl_save"
+                android:textAllCaps="false"
+                android:textColor="@drawable/btn_pressed_text"
+                android:textSize="@dimen/default_size" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="header_red">#E53A2B</color>
+    <color name="green">#379129</color>
+    <color name="gray_unavailable">#767676</color>
+    <color name="yellow_rout">#EBD34D</color>
+    <color name="dark_outservice">#372222</color>
+    <color name="tab_back">#F4F4F4</color>
+    <color name="black">#000000</color>
+    <color name="img_back_color">#E5E5E5</color>
+    <color name="view_color">#656565</color>
+    <color name="dark_gray">#3B3938</color>
+    <color name="no_light_gray">#F4F4F4</color>
+
+
+    <color name="blue">#0C6299</color>
+    <color name="dark_blue">#3079ed</color>
+    <color name="brown">#585858</color>
+    <color name="light_green">#2A920D</color>
+    <color name="dark_green">#127021</color>
+    <color name="dark_yellow">#fe9900</color>
+    <color name="gray">#c3c3c3</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="color_dark_gray">#333333</color>
+    <color name="trans_black">#99000000</color>
+    <color name="trans_black1">#99000000</color>
+    <color name="default_text">#E8F7FE</color>
+    <color name="default_sign_up_btn">#16C95C</color>
+    <color name="default_background">#353966</color>
+
+
+
+
+</resources>
