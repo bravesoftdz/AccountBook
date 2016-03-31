@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_all"
+        android:orientation="horizontal">
+       <!-- <TextView
+            android:id="@+id/idTvSellerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Arihant stationary mart"
+            android:padding="@dimen/d5dp"
+            android:textColor="@color/black"
+            android:textSize="22dip"
+            android:textStyle="bold"
+            android:typeface="sans" />-->
+        <Spinner
+            android:id="@+id/idSpnrAccountType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/d10dp"
+            android:layout_margin="@dimen/d5dp"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/array_transaction_account"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/idTransactionList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#b5b5b5"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector" />
+
+</LinearLayout>

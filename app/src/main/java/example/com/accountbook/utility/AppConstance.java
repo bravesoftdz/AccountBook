@@ -6,24 +6,10 @@ package example.com.accountbook.utility;
 public class AppConstance {
 
 
-    /**
-     * URLS....
-     */
-    public static final String BASE_URL="https://sspmobile.openroadsdemo.com/opentms/ssp/";
-    public static final String RECHABLE_URL="https://sspmobile.openroadsdemo.com/opentms/ssp/assistCause";
-    public static final String LOGIN_URL=BASE_URL+"driver/login";
-    public static final String LOGIN_COMPLETE_URL=BASE_URL+"driver/completeLogin";
-    public static final String ASSIST_CAUSE_URL=BASE_URL+"assistCause";
 
 
-    /**
-     * END URLS
-     */
-    public static final String USERNAME="techark.test";
-    public static final String PASSWORD="techark";
-    public static final String PREFERENCE_KEY_USERNAME="username";
-    public static final String PREFERENCE_KEY_PASSWORD="password";
     public static final String SELLER_ID="seller_id";
+    public static final String CREDIT="Credit";
     public static final String TRANSACTION_ID="transaction_id";
 
     public static final int REQUEST_LOGIN = 1;

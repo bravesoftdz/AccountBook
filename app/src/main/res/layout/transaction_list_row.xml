@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/green"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/idButtonContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/idTvEditTransaction"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:text="@string/fa_pencil"
+            android:textColor="@drawable/btn_pressed_text"
+            android:textSize="@dimen/default_size" />
+
+        <TextView
+            android:id="@+id/idTvDeleteTransaction"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_bg_red"
+            android:gravity="center"
+            android:text="@string/fa_trash"
+            android:textColor="@drawable/btn_pressed_text"
+            android:textSize="@dimen/default_size" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:padding="@dimen/d5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/idButtonContainer"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/idTvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="29-03-2016"
+            android:textColor="#040404"
+            android:textSize="12dip"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/idTvTransactionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="2016"
+            android:textColor="#040404"
+            android:textSize="12dip"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/d5dp">
+
+        <TextView
+            android:id="@+id/idPreviousTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="50000"
+            android:textColor="#040404"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+
+        <TextView
+            android:id="@+id/idTvTransactionAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="5000"
+            android:textColor="@color/black"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/idTvfinalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="5000"
+            android:textColor="#040404"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+    </LinearLayout>
+
+</RelativeLayout>

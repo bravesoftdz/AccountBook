@@ -1,6 +1,7 @@
 package example.com.accountbook;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
@@ -12,6 +13,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import example.com.accountbook.entity.Seller;
+import example.com.accountbook.utility.AppConstance;
 import example.com.accountbook.utility.SellerAdapter;
 
 /**
@@ -20,6 +22,7 @@ import example.com.accountbook.utility.SellerAdapter;
 public class SellerManagementFragment extends Fragment {
     View sellerListView;
     ListView idSellerList;
+
 
     @Nullable
     @Override
@@ -33,6 +36,9 @@ public class SellerManagementFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Seller seller=sellerAdapter.getItem(position);
+                Intent accountDetailIntent=new Intent(getActivity(),AccountDetail.class);
+                accountDetailIntent.putExtra(AppConstance.SELLER_ID,seller.getId());
+                startActivity(accountDetailIntent);
                 Log.e("SellerManagementFragme",seller.toString());
             }
         });

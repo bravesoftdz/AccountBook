@@ -11,6 +11,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
+
 import example.com.accountbook.entity.Seller;
 import example.com.accountbook.entity.TransactionDetail;
 import example.com.accountbook.utility.AppConstance;
@@ -126,6 +128,7 @@ public class AddTransactionFragment extends android.app.Fragment {
                         TransactionDetail transaction = new TransactionDetail(sellerId, transactionType, idEtTransactionDescription.getText().toString(), Utility.getCurrentDate(), idEtTransactionNumber.getText().toString(), amount, idSpnrAccountType.getSelectedItem().toString());
                         Log.e(TAG,transaction.toString());
                         transaction.save();
+                        Toast.makeText(getActivity(),"Transaction saved",Toast.LENGTH_LONG).show();
 
                     }
                 }

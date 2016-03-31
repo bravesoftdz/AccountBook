@@ -54,8 +54,9 @@
                     android:layout_marginBottom="@dimen/d10dp"
                     android:background="@drawable/textbox_bg"
                     android:hint="@string/lbl_transaction_number"
-                    android:maxLength="64"
-                    android:singleLine="true" />
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:maxLength="5" />
             <EditText
                     android:id="@+id/idEtTransactionDescription"
                     android:layout_width="match_parent"

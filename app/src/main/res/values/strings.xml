@@ -23,5 +23,8 @@
     <string name="lbl_transaction_number">Transaction number</string>
     <string name="lbl_transaction_description">Transaction description</string>
     <string name="lbl_transaction_type">Transaction type</string>
+    <string name="title_activity_account_detail">AccountDetail</string>
+
+    <string name="hello_world">Hello world!</string>
 
 </resources>
